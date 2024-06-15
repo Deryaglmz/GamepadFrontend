@@ -1,0 +1,282 @@
+<MDFloatLayout>:
+    size_hint: 1, 1
+
+<MainScreen>:
+    name: "mainScreen"
+
+    MDFloatLayout:
+        size_hint: None, None
+        size: root.size
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+        MDCard:
+            size_hint: 0.97, 0.97
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            md_bg_color: [1, 1, 1, 1]
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "Touch"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.3, "center_y": 0.95}
+                md_bg_color: [0, 0, 0, 1]
+                font_size: "10sp"
+                text_color: 1, 1, 1, 1
+                line_color: "black"
+                theme_text_color: "Custom"
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "Enlarge"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.4, "center_y": 0.95}
+                md_bg_color: [0, 0, 0, 1]
+                font_size: "10sp"
+                text_color: 1, 1, 1, 1
+                line_color: "black"
+                theme_text_color: "Custom"
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "COM5"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.5, "center_y": 0.95}
+                md_bg_color: [0.5, 0.5, 0.5, 1]
+                font_size: "10sp"
+                text_color:[0.270588, 0.286275, 0.309804, 1]
+                line_color: [0.5, 0.5, 0.5, 1]
+                theme_text_color: "Custom"
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "T1122X 5000m"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.6, "center_y": 0.95}
+                md_bg_color: [0.5, 0.5, 0.5, 1] 
+                font_size: "10sp"
+                text_color:[0.270588, 0.286275, 0.309804, 1]
+                line_color: [0.5, 0.5, 0.5, 1]
+                theme_text_color: "Custom"
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "R1122X 5000m"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.7, "center_y": 0.95}
+                md_bg_color: [0.5, 0.5, 0.5, 1]
+                font_size: "10sp"
+                text_color:[0.270588, 0.286275, 0.309804, 1]
+                theme_text_color: "Custom"
+                line_color: [0.5, 0.5, 0.5, 1]
+
+            MDRectangleFlatButton:
+                style: "text"
+                text: "STOP"
+                size_hint: 0.2, 0.05
+                pos_hint: {"center_x": 0.8, "center_y": 0.95}
+                md_bg_color: [1, 0, 0, 1]
+                font_size: "10sp"
+                text_color: 1, 1, 1, 1
+                line_color: "red"
+                theme_text_color: "Custom"      
+
+        MDCard:
+            size_hint: 0.97, 0.88
+            pos_hint: {"center_x": 0.5, "center_y": 0.46}
+            md_bg_color: [0.9412, 0.9412, 0.9412, 1]
+            radius: [0, 0, 0, 0]
+
+            MDFloatLayout:
+                size_hint: 1, 1
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+                # MDIconButton:
+                #     icon:"plus"
+                #     pos_hint : {"center_x":.5,"center_y":.5} 
+                #     theme_text_color : "Custom"
+                #     text_color : [0,0,1,1]
+                #     font_size: "24sp"
+                #     user_font_size: "64sp"
+
+                MDRectangleFlatButton:
+                    style: "text"
+                    text: "LB"
+                    size_hint: 0.10, 0.01
+                    pos_hint: {"center_x": 0.08, "center_y": 0.85}
+                    md_bg_color: [1, 1, 1, 1]
+                    font_size: "15sp"
+                    text_color: 0, 0, 0, 1
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+                    text_color: 0, 0, 0, 1
+
+                MDRectangleFlatButton:
+                    size_hint: 0.05, 0.02
+                    pos_hint: {"center_x": 0.2, "center_y": 0.85}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "lock"
+                            size_hint: None, None
+                            size: "24dp", "24dp"
+                            pos_hint: {"center_x": 0.62, "center_y": 0.75}
+
+                MDRectangleFlatButton:
+                    #size_hint: 0.10, 0.01
+                    size: 50, self.height
+                    pos_hint: {"center_x": 0.15, "center_y": 0.4}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "arrow-down-bold"
+                            size_hint: None, None
+                            size: "50dp", "50dp"
+                            pos_hint: {"center_x": 0.3, "center_y": 0.6}
+
+                MDRectangleFlatButton:
+                    #size_hint: 0.10, 0.01
+                    size: 50, self.height
+                    pos_hint: {"center_x": 0.08, "center_y": 0.3}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "arrow-right-bold"
+                            size_hint: None, None
+                            size: "50dp", "50dp"
+                            pos_hint: {"center_x": 0.1, "center_y": 0.3}
+
+                MDRectangleFlatButton:
+                    #size_hint: 0.10, 0.01
+                    size: 50, self.height
+                    pos_hint: {"center_x": 0.22, "center_y": 0.3}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "arrow-left-bold"
+                            size_hint: None, None
+                            size: "50dp", "50dp"
+                            pos_hint: {"center_x": 0.2, "center_y": 0.3}
+
+                MDRectangleFlatButton:
+                    #size_hint: 0.10, 0.01
+                    size: 50, self.height
+                    pos_hint: {"center_x": 0.15, "center_y": 0.2}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "arrow-up-bold"
+                            size_hint: None, None
+                            size: "50dp", "50dp"
+                            pos_hint: {"center_x": 0.15, "center_y": 0.2}
+
+
+                MDRectangleFlatButton:
+                    size_hint: 0.05, 0.02
+                    pos_hint: {"center_x": 0.80, "center_y": 0.85}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "lock"
+                            size_hint: None, None
+                            size: "24dp", "24dp"
+                            pos_hint: {"center_x": 0.62, "center_y": 0.75}
+
+
+                MDRectangleFlatButton:
+                    style: "text"
+                    text: "RB"
+                    size_hint: 0.10, 0.01
+                    pos_hint: {"center_x": 0.92, "center_y": 0.85}
+                    md_bg_color: [1, 1, 1, 1]
+                    font_size: "15sp"
+                    text_color: 0, 0, 0, 1
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                MDRectangleFlatButton:
+                    size_hint: 0.04, 0.02
+                    pos_hint: {"center_x": 0.3, "center_y": 0.12}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "circle"
+                            size_hint: None, None
+                            size: "20dp", "20dp"
+                            pos_hint: {"center_x": 0.4, "center_y": 0.5}
+
+                MDRectangleFlatButton:
+                    size_hint: 0.04, 0.02
+                    pos_hint: {"center_x": 0.42, "center_y": 0.12}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "play"
+                            size_hint: None, None
+                            size: "20dp", "20dp"
+                            pos_hint: {"center_x": 0.4, "center_y": 0.5}
+
+                MDRectangleFlatButton:
+                    size_hint: 0.04, 0.02
+                    pos_hint: {"center_x": 0.69, "center_y": 0.12}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "image-size-select-large"
+                            size_hint: None, None
+                            size: "20dp", "20dp"
+                            pos_hint: {"center_x": 0.4, "center_y": 0.5}
+
+                MDRectangleFlatButton:
+                    size_hint: 0.02, 0.02
+                    pos_hint: {"center_x": 0.81, "center_y": 0.12}
+                    md_bg_color: [1, 1, 1, 1]
+                    line_color: 0, 0, 0, 1
+                    theme_text_color: "Custom"
+
+                    FloatLayout:
+                        MDIcon:
+                            icon: "circle"
+                            size_hint: None, None
+                            size: "60dp", "60dp"
+                            pos_hint: {"center_x": 0.4, "center_y": 0.5}
+
+        MDFloatLayout:
+            size_hint: None, None
+            size: root.size
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+            MDCard:
+                size_hint: 0.45, 0.67
+                pos_hint: {"center_x": 0.5, "center_y": 0.53}
+                md_bg_color: [1, 1, 1, 1]
+
+                MDBoxLayout:
+                    height: "200dp"
+                    orientation: 'vertical'
+
+                    FitImage:
+                        size_hint_y: 3
+                        source: 'image/image1.png'
