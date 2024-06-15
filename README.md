@@ -37,4 +37,3 @@ pip install kivy kivymd
 ```bash
 python main.py
 ```
-![gamepaf_frontend](https://github.com/Deryaglmz/GamepadFrontend/assets/129391768/98e032f1-c376-4a5f-935a-d2237b4230c7)
